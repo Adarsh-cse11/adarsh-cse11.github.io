@@ -139,6 +139,7 @@ main nav button {
 }
 
 .seperation {
+  box-shadow: 0 5px 10px 0px rgb(68, 82, 230);
     height: 3px;
     background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
 }
@@ -156,14 +157,20 @@ main nav button {
     display: flex;
     margin: 0px 145px;
     width: 80vw;
-    height: 42vh;
+    height: 50vh;
     gap: 35px;
     max-width: 80vw;
-    overflow: scroll;
+    overflow:scroll
+
+}
+.movie :hover{
+    transform: scale(1.1);
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
 }
 
 .m img {
-    height: 258px;
+    height: 260px;
     border-radius: 4px;
 }
 
@@ -177,10 +184,11 @@ main nav button {
 
 .why {
     display: flex;
-    margin: 0px 145px;
+    margin: 0px 80px;
     height: 30vh;
     gap: 20px;
     max-width: 90vw;
+    margin-top: 50px;
 
 }
 
@@ -188,7 +196,7 @@ main nav button {
     width: 350px;
     height: 270px;
     border-radius: 20px;
-    background: linear-gradient(to right, rgba(51, 41, 103, 0.636) 16%, rgba(51, 41, 103, 0.636), rgba(51, 41, 103, 0.636), rgba(51, 41, 103, 0.636), rgba(51, 41, 103, 0.636) 84%);
+    background: linear-gradient(to right, rgb(51 28 132 / 64%) 16%, rgb(60 41 103 / 64%), rgb(34 39 94 / 64%), rgba(54, 27, 101, 0.64), rgba(42, 17, 50, 0.64) 84%);
 }
 
 .w h3 {
@@ -233,16 +241,16 @@ main nav button {
 .freq {
     display: flex;
     flex-direction: column;
-    margin: 0px 75px;
-    gap: 4px;
+    margin: 0px 145px;
+    gap: 8px;
 }
 
 .btn2 {
     cursor: pointer;
-    height: 42px;
-    padding: 11px;
+    height: 84px;
+    padding: 30px;
     text-align: start;
-    font-size: 12px;
+    font-size: 27px;
     font-weight: 500;
     background-color: #292929;
     color: white;
@@ -253,12 +261,13 @@ main nav button {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 35px auto auto;
-    font-size: 8px;
+    margin: 50px auto auto;
+    font-size: 17px;
 }
 
 .mem {
     margin: 10px;
+    margin-bottom: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -266,23 +275,34 @@ main nav button {
 }
 
 .mem input {
+    margin-top: 0px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 13px;
+    width: 550px;
+    height: 28px;
+    background-color: black;
     border: .5px solid grey;
-    width: 260px;
-    height: 15px;
-    border-radius: 3px;
+    border-radius: 2px;
 }
 
 .mem button {
-    width: 110px;
-    border-radius: 3px;
-    background-color: #d71111;
+    background-color: red;
+    color: white;
+    width: 220px;
+    height: 53px;
+    font-size: 21px;
+    font-weight: 900;
+    border: none;
+    border-radius: 2px;
 }
 
 .ques {
     color: #979696;
-    margin: 30px 74px;
-    margin-bottom: 0px;
-    font-size: 8px;
+    margin: 30px 144px;
+    margin-bottom: 50px;
+    font-size: 18px;
 }
 
 u {
@@ -292,45 +312,77 @@ u {
 .grid {
     cursor: pointer;
     color: #979696;
-    font-size: 7px;
-    margin: 25px 74px;
-    margin-bottom: 0px;
+    font-size: 15px;
+    margin: 40px 144px;
+    margin-bottom: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 8px;
+    grid-gap: 15px;
 }
 
 .end select {
-    margin: 23px 74px;
+    margin: 23px 144px;
     background-color: #000000;
-    font-weight: 600;
-    font-size: 7px;
-    width: 65px;
-    height: 14px;
+    font-weight: 500;
+    font-size: 17px;
+    width: 100px;
+    height: 30px;
     color: white;
     border: .3px solid white;
     border-radius: 2px;
     outline-style: none;
-    margin-bottom: 18px;
+    margin-bottom: 35px;
 }
 
 .net {
     color: #979696;
-    margin: 0px 74px;
+    margin: 0px 144px;
     margin-bottom: 0px;
-    font-size: 8px;
+    font-size: 10px;
 }
 
 .net div {
-    margin-bottom: 18px;
+    font-size: 15px;
+    margin-bottom: 30px;
 
 }
 
 .net span {
-    font-size: 6.6px;
+    font-size: 12px;
+    margin-bottom: 12px;
 }
 
 .net a {
-    font-size: 6.6px;
+    font-size: 12px;
     color: rgb(57, 127, 239);
+}
+@media (max-width: 768px){
+    .head1{
+        font-size: 12px;
+        position: static;
+    }
+    /* .in{
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-items: center;
+
+} */
+
+.box {
+    /* margin-top: 200px;
+    color: white; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+    
+}
+.why{
+    display: flex;
+    flex-direction: column;
+    box-sizing: 20;
+
 }
