@@ -155,12 +155,14 @@ main nav button {
 .movie {
     cursor: pointer;
     display: flex;
-    margin: 0px 145px;
-    width: 80vw;
+   align-items: center;
+    /* margin: 0px 145px; */
+    width: 78vw;
     height: 50vh;
-    gap: 35px;
+    gap: 30px;
     max-width: 80vw;
-    overflow:scroll
+    /* overflow:scroll */
+
 
 }
 .movie :hover{
@@ -379,10 +381,16 @@ u {
 }
 
     
-}
+
 .why{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+.movie{
     display: flex;
     flex-direction: column;
-    box-sizing: 20;
 
+}
 }
